@@ -1,0 +1,27 @@
+{
+  "name": "FAMIA-MD",
+  "description": "Javascript WhatsApp bot made by 𝘿𝘼𝙉𝙄𝙎𝙃-𝙈𝘿",
+  "logo": "https://i.ibb.co/gLMqwdGj/2aa914c4df63.jpg",
+  "keywords": ["DANISH-BOT"],
+  "success_url": "/",
+  "stack": "container",
+  
+  "env": {
+    "MONGODB_URL": {
+      "description": "MongoDB connection string for database storage",
+      "required": false
+    },
+    "DB_NAME": {
+      "description": "Database name for MongoDB (default: danish-x10)",
+      "required": false,
+      "value": "danish-x10"
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-26"
+}
